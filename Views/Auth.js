@@ -3,7 +3,7 @@ const router = express.Router();
 const test = require('../Controllers/Auth');
 
 //test api
-router.get('/testAuth', test.loginStudent);
+router.post('/login', test.loginStudent);
 
 //signup student 
 router.post('/signupTest', test.signupStudent);

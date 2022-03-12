@@ -1,5 +1,13 @@
-const {auth} = require('../Models/Auth')
-const loginStudent = async ()=>
+const {Admin} = require('../Models/Auth');
+const adminValidator = require('../Validators/adminValidator')
+const passwordHash = require('../utils/passwordHash');
+const referralCode = require('../referralCode/referral');
+const {Wallet} = require('../Models/Wallet');
+const {Referral} =require('../Models/referral');
+const generateJWT = require('../utils/generateJWT');
+const verifyPass = require('../utils/verifyPassword');
+
+const loginStudent = async (req, res)=>
 {
     const {email, password} = req.body;
     const data = {email, password};
