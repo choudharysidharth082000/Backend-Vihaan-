@@ -226,6 +226,12 @@ const signupStudent = async (req, res) =>
 
 
 }
+
+const test = (req,res) =>
+{
+    res.send('Helllo world');
+    
+}
 module.exports = 
 {
     loginStudent,

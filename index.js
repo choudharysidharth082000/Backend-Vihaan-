@@ -36,7 +36,7 @@ mongoose.connect(`${process.env.DATABASE}`, () =>
 app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerJsDocs));
 
 //requiring the routes
-app.use('/v1/test', auth);
+app.use('/v1/auth', auth);
 
 
 

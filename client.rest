@@ -1,0 +1,11 @@
+POST http://localhost:3000/v1/auth/signupTest
+Content-Type: application/json
+
+{
+    "userName": "Uttkarsh",
+    "password": "passwordisthebest",
+    "email": "choudharuysidharth082000@gmail.com"
+}
+
+###
+
